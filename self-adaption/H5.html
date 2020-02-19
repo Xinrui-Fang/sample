@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>Document</title>
+	<style>
+		.{
+			margin: 0;
+			padding: 0;
+		}
+
+		html,body{
+            padding:0;
+            margin:0;
+            height: 100%;
+            background-color: pink;
+        }
+
+		.BG{
+			
+			width: auto;
+			text-align: center;
+		}
+
+		.content{
+			display: flex;
+		}
+
+		div.circle{
+			margin: 3% auto;/*%基于父元素的宽度*/
+			width: 200px;
+            height: 200px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+            background: red;
+
+		}
+
+		.button{
+			margin: 0 auto;
+		}
+
+		.select-form{
+			margin-bottom: 3%;
+		}
+
+		.text{
+			background-color: green;
+			width: 50%;
+			height: 200px;
+			margin: auto;
+			margin-top: 2%;
+			overflow-y: scroll;
+		}
+
+		span{
+			color: white;
+	        
+		}
+	</style>
+</head>
+<body>
+	<div class="BG">
+		<div class="text">
+			<span>
+				读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文
+			</span>
+		</div>
+ 
+		<!--内容区域-->
+		<div class="content">
+			
+			<!--唱片区域-->
+		    <div class="circle"></div>
+		</div>
+
+		<!--载入预设音乐-->
+		<audio id="bgMusic" autoplay="autoplay">
+		<source src="music.mp3" type="audio/mp3">
+	    </audio>
+
+		<div class="button">
+			<!--Last Music-->
+	        <button  class="last" id="lastMusic">Last</button>
+	        <!--Play and Pause-->
+	        <button  class="play" id="toggleBtn">Play</button>
+	        <!--Next Music-->
+	        <button  class="next" id="nextMusic">Next</button>
+		</div>
+
+		<br>
+		
+            <!--下拉菜单-->
+	        <select  class="select-form" id="selectChoice">
+	    	    <option value="0">music</option>
+	    	    <option value="1">music2</option>
+	    	    <option value="2">music3</option>
+	        </select>
+	</div>
+
+	<!--引用jacaScript外部链接-->
+	<script type="text/javascript" src="JS.js"></script>
+</body>
+</html>
