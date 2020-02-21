@@ -1,0 +1,138 @@
+/*
+* @Author: Lenovo
+* @Date:   2020-02-20 14:58:46
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2020-02-21 10:49:52
+*/
+        .{
+			margin: 0;
+			padding: 0;
+		}
+
+		html,body{
+            padding:0;
+            margin:0;
+            /*height: 100%;*/
+            background-color: #CD790B;
+            /*不让手机出现滚动条*/
+        }
+
+		.BG{
+			
+			width: auto;
+			text-align: center;
+		}
+
+		.bookMark{
+			position: absolute;
+			right: 20%;
+			top: 7%;
+
+		}
+        /*文字部分的背景框*/
+		.text{
+			background-color: rgba(0,0,0,0.3);
+			width: 70%;
+			height: 320px;/*320*/
+			margin: auto;
+			margin-top: 18%;
+			overflow-y: scroll;
+		}
+        
+        /*文字框内文字颜色*/
+		span{
+			font-family: microsoft yahei;
+			color: white;
+		}
+
+		/*标题设定*/
+        .text-head1{
+            font-weight: bold;
+            font-size: 20px; 
+            line-height: 30px;        
+        }
+        .text-content{
+        	line-height: 30px;
+        }
+		/*播放器区域的容器*/
+		/*************************************************************/
+		.flex-content{
+			position: relative;
+			margin: auto;
+			margin-top: 15%;
+			width: 50%;
+			display: flex;
+			align-items: flex-start;
+            justify-content: space-around;
+		}
+        /*上一首button*/
+		.last{
+			margin: auto;/*垂直居中*/
+			padding-right: 20px;
+			border: none;
+			background-color: transparent;
+			outline: none;
+		}
+		.img{
+			
+		}
+		/*下一首button*/
+		.next{
+			margin: auto;
+			padding-left: 20px;
+			border: none;
+			background-color: transparent;
+			outline: none;
+		}
+        
+        /*唱片*/
+		div.circle{
+			margin: auto;/*%基于父元素的宽度*/
+			transition: all 2s;	
+				
+		}
+
+		.p{
+			position: absolute;
+			top: 25%;
+			left: 39%;
+		}
+
+		/*透明的播放按钮，叠加在播放暂停键按钮上面*/
+		.play{
+			height: 50px;
+			width: 50px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+
+		/*唱针*/
+		div.pin{
+			position: absolute;
+			top: -25px;
+			right: 25px;
+			transition: all 1s;/*过渡：让盒子在transform的时候，有个过渡期*/
+			transform-origin: 100% 0;
+		}
+
+		div.pin:hover{
+			
+		}
+
+		.button{
+			margin: 0 auto;
+		}
+        
+        /*歌曲选择器样式*/
+		.select-form{
+			font-family: microsoft yahei;
+			font-weight: bold;
+			font-size: 15px;
+			color: #2A2A2A;
+			margin-top: 3%;
+			border: solid 4px #2A2A2A;
+            background: transparent;
+		}
+        
+        
