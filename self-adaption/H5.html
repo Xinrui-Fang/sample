@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<div class="BG">
+		<div class="bookMark">
+				<img src="bookMark.png" alt=""/>
+		</div>
+
+		<div class="text">
+			<span class="text-head1">
+				标题1
+			</span>
+			<br>
+			<span class="text-content">
+				读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文·读者新语文
+				
+			</span>
+		</div>
+ 
+		<!--播放器区域-->
+		<div class="flex-content">
+			<!--Last Music-->
+
+			<button  class="last" id="lastMusic">
+				<img src="last.png" alt="" class="img" width="30" height="30" />
+			</button>
+			
+			<!--唱片区域-->
+		    <div class="circle">
+		    	<img src="diskPlay.png" alt="" width="100" height="100" id="image" />
+		    	<div class="p">
+		    		<button class="play" id="toggleBtn"></button>
+		    	</div>
+		    </div>
+
+		    <!--唱针-->
+		    <div class="pin" id="pin">
+	        	<img src="Pin.svg" alt="" width="50" height="50" />
+	        </div>
+
+		    <!--Next Music-->
+	        <button  class="next" id="nextMusic">
+	        	<img src="next.png" alt="" class="img" width="30" height="30" />
+	        </button>
+	        
+
+		</div>
+
+		<!--载入预设音乐-->
+		<audio id="bgMusic" autoplay="autoplay">
+		<source src="music.mp3" type="audio/mp3">
+	    </audio>
+
+		
+		
+            <!--下拉菜单-->
+	        <select  class="select-form" id="selectChoice">
+	    	    <option value="0">music</option>
+	    	    <option value="1">music2</option>
+	    	    <option value="2">music3</option>
+	        </select>
+	</div>
+
+	<!--引用jacaScript外部链接-->
+	<script type="text/javascript" src="JS.js"></script>
+</body>
+</html>
